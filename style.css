@@ -122,7 +122,7 @@ nav .logoNav{
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 650px){
    nav{
      z-index: 232;
    }
