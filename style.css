@@ -6,7 +6,7 @@
 body {
     font-family: 'Plus Jakarta Sans';
     overflow-x: hidden;
-    
+   
     height: 3000px;
 }
 
@@ -17,7 +17,7 @@ nav{
     background-color: white
     ;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 30px 0;
     color: rgb(237, 211, 255);
 }
 
@@ -40,7 +40,7 @@ nav ul li a:hover{
 
 nav .logo{
     font-family:  "Pacifico", cursive;;
-    width: 100px;
+    width: 150px;
 }
 
 nav .logoNav{
@@ -49,7 +49,7 @@ nav .logoNav{
 
 .menu-toggle{
     display: none;
-    height: 20px;
+    height: 30px;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
@@ -58,19 +58,20 @@ nav .logoNav{
 }
 
 .menu-toggle span{
-    height: 3px;
-    width: 28px;
+    height: 5px;
+    width: 50px;
     background-color:#363 ;
     border-radius: 3px;
+    
     transition: all .5s;
 }
 
 
 .menu-toggle input{
-    width: 40px;
+    width: 60px;
     height: 20px;
     position: absolute;
-    left: -5px;
+    left: -1px;
     opacity: 0;
     cursor: pointer;
     
@@ -112,17 +113,108 @@ nav .logoNav{
 }
 /* Responsive Breakpoints */
 
-
-/* Ukuran Table */
-
-
-@media screen and (max-width: 768px){
-    nav ul{
-        width: 50%;
-    }
+@media screen and (min-width:1500px){
+ nav{
+  background-color: #f4f2ef;
+ }
+ nav .logo{
+  margin-left: -150px;
+ }
+ nav ul li{
+  display: flex;
+  color: #1e4a3c;
+  font-size: 20px;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 650px){
+nav ul{
+ margin-top: 10px;
+ width: 50%;
+ display: flex;
+ justify-content: space-between;
+}
+
+.hero{
+ display: flex;
+ justify-content: space-between;
+ background-color: #f4f2ef;
+ height: 80vh;
+}
+
+.hero h1{
+ font-size: 7.5em;
+ color: #1e4a3c;
+ margin-left: 70px;
+ margin-top: 100px;
+}
+.hero p{
+ line-height: 29px;
+      font-family: 'Plus Jakarta Sans';
+      font-weight: 600;
+      font-size: 1.6em;
+      color: #97a259;
+      margin-left: 73px;
+      width: 85%;
+}
+.hero .cup{
+ width: 45%;
+ margin-right: 100px;
+}
+
+main{
+ display: flex;
+ 
+}
+
+main .story1{
+ margin-top: 175px;
+}
+
+main p{
+ font-size: 1.8em;
+ line-height: 50px;
+ text-align: justify;
+ width: 90%;
+ 
+}
+main p:nth-child(2){
+ margin-top: 50px;
+}
+
+main img{
+ margin-top: 130px;
+ margin-left: 90px;
+}
+
+main h1{
+ position: absolute;
+ color: #363;
+      font-family: 'Plus Jakarta Sans';
+      font-size: 3em;
+      margin-left: 42%;
+      margin-top: 50px;
+}
+
+.tombolMain{
+ width:13%;
+      color: white;
+      height: 2%;
+      background-color: #363;
+      border-radius: 50px;
+      font-style: none;
+      text-decoration: none;
+      box-shadow: 0px 10px 20px 5px rgb(210, 210, 210);
+      font-family: 'Plus Jakarta Sans';
+      margin-left: 865px;
+      font-size: 1.2em;
+      font-weight: 350;
+      border-bottom: #363;
+      margin-top: 30px;
+      border-right: #363;
+}
+}
+
+@media screen and (max-width: 900px){
    nav{
      z-index: 232;
    }
@@ -182,17 +274,20 @@ nav .logoNav{
     .hero h1{
       color: #363;
       font-weight: 650;
+      font-size: 5em;
     }
     .hero p{
       line-height: 25px;
       font-family: 'Plus Jakarta Sans';
       font-weight: 600;
+      font-size: 1em;
       color: #97a259;
       text-align: center;
+      font-size: 1em;
     }
     
     .hero .cup{
-      width: 350px;
+      width: 85%;
       margin-top: 25px;
     }
     
@@ -203,35 +298,36 @@ nav .logoNav{
       padding-top: 50px;
     }
     main .imgMain{
-      width: 400px;
-      height: 400px;
+      width: 90%;
+      
     }
     main h1{
       color: #363;
       font-family: 'Plus Jakarta Sans';
+      font-size: 3em;
     }
     
     main .story{
-      width: 360px;
+      width: 50vh;
       font-family: 'Plus Jakarta Sans';
       font-weight: 400;
-      line-height:23px;
-      font-size: 15px;
+      line-height:35px;
+      font-size: 140%;
       margin-left: 10px;
       text-align: justify;
     }
     
    .tombolMain{
-      width:120px;
+      width:23%;
       color: white;
-      height: 40px;
+      height: 2%;
       background-color: #363;
       border-radius: 50px;
       font-style: none;
       text-decoration: none;
       box-shadow: 0px 10px 20px 5px rgb(210, 210, 210);
       font-family: 'Plus Jakarta Sans';
-      margin-left: 10px;
+      margin-left: 20px;
       font-weight: 350;
       border-bottom: #363;
       border-right: #363;
@@ -239,7 +335,7 @@ nav .logoNav{
     
     .news{
       background-color:rgba(247,249,248,255) ;
-      height: 565px;
+      height: 30%;
       margin-top: 80px;
       display: flex;
       flex-direction: column;
@@ -251,28 +347,29 @@ nav .logoNav{
     .news .judulNews{
       font-family: 'Plus Jakarta Sans';
       color: #363;
-      margin-top: -200px;
+      margin-top: -350px;
       line-height: 150px;
-      font-size: 40px;
+      font-size: 6em;
     }
     .news .bgJudul{
-      margin-top: 50p;
+      margin-top: -50px;
     }
     .news .bgJudul img{
-      width: 350px;
+      width: 90%;
     
   
     }
     .bgJudul .pNews{
       font-family: 'Plus Jakarta Sans';
       color: #97a259;
-      font-size: 13px;
-      width: 350px;
-      
-      margin-top: -40px;
+      font-size: 1.3em;
+      width: 65%;
+      text-align: center;
+      margin-left: 150px;
+      margin-top: -20px;
     }
     .slider{
-      height: 290px;
+      height: 80%;
       width: 50vh;
       margin-top:100px;
       overflow-x: scroll;
@@ -281,15 +378,18 @@ nav .logoNav{
     .rowImg{
       display: flex;
       width: 90vh;
-      height: 300;
+      height: 80%;
       flex-direction: row;
-      justify-content: space-around;
+      
       overflow-x: scroll;
+    }
+    .rowImg .card{
+     margin-left: 10px;
     }
     
     .rowImg .card1{
-      height: 264px;
-      width: 160px;
+      height:400px;
+      width:17%;
     box-shadow: 0px 10px 10px 1px rgb(210, 210, 210);
       background-color: white;
       border-radius: 15px;
@@ -299,7 +399,7 @@ nav .logoNav{
     }
     
     .rowImg .card1 h1{
-      font-size: 12px;
+      font-size: 1em;
       text-align: start;
       padding-left:10px;
       
@@ -310,7 +410,7 @@ nav .logoNav{
     }
     
     .rowImg .card1 p{
-      font-size: 10px;
+      font-size: 1em;
       padding-left: 10px;
       color: grey;
       text-align: start;
@@ -318,14 +418,14 @@ nav .logoNav{
     }
     
     .card1 img{
-      width: 160px;
+      width: 100%;
       
     }
     
     
     .rowImg .card2{
-      height: 264px;
-      width: 160px;
+      height: 400px;
+      width: 17%;
         box-shadow: 0px 10px 10px 1px rgb(210, 210, 210);
       background-color: white;
       border-radius: 15px;
@@ -334,7 +434,7 @@ nav .logoNav{
     }
     
     .rowImg .card2 h1{
-      font-size: 12px;
+      font-size: 1em;
       text-align: start;
       padding-left:10px;
       
@@ -345,22 +445,22 @@ nav .logoNav{
     }
     
     .rowImg .card2 p{
-      font-size: 10px;
+      font-size: 1em;
       padding-left: 10px;
       color: grey;
       text-align: start;
     }
     
     .card2 img{
-      width: 160px;
-      height: 108px;
+      width: 100%;
+      height: 155px;
       
     }
     
     
     .rowImg .card3{
-      height: 264px;
-      width: 160px;
+      height: 400px;
+      width: 17%;
         box-shadow: 0px 10px 10px 1px rgb(210, 210, 210);
       background-color: white;
       border-radius: 15px;
@@ -368,7 +468,7 @@ nav .logoNav{
       overflow: hidden;
     }
     .rowImg .card3 h1{
-      font-size: 12px;
+      font-size: 1em;
       text-align: start;
       padding-left:10px;
       
@@ -379,20 +479,20 @@ nav .logoNav{
     }
     
     .rowImg .card3 p{
-      font-size: 10px;
+      font-size: 1em;
       padding-left: 10px;
       color: grey;
       text-align: start;
     }
     .card3 img{
-      width: 160px;
+      width: 100%;
       
     }
     
     
     .rowImg .card4{
-      height: 264px;
-      width: 160px;
+      height: 400px;
+      width: 17%;
         box-shadow: 0px 10px 10px 1px rgb(210, 210, 210);
       background-color: white;
       border-radius: 15px;
@@ -400,7 +500,7 @@ nav .logoNav{
       overflow: hidden;
     }
     .rowImg .card4 h1{
-      font-size: 12px;
+      font-size: 1em;
       text-align: start;
       padding-left:10px;
       
@@ -411,13 +511,13 @@ nav .logoNav{
     }
     
     .rowImg .card4 p{
-      font-size: 10px;
+      font-size: 1em;
       padding-left: 10px;
       color: grey;
       text-align: start;
     }
     .card4 img{
-      width: 160px;
+      width: 100%;
       
     }
     
@@ -458,4 +558,4 @@ width:120px;
      text-spa
     }
     
-}
+    }
