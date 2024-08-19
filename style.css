@@ -114,7 +114,7 @@ nav .logoNav{
 }
 /* Responsive Breakpoints */
 
-@media screen and (min-width:1500px){
+@media screen and (max-width:2000px){
  nav{
   background-color: #f4f2ef;
  }
@@ -215,7 +215,7 @@ main h1{
 }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1100px){
    nav{
      z-index: 232;
    }
